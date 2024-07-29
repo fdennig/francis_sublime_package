@@ -1,0 +1,18 @@
+[
+    { // Open in Sublime Merge
+        "keys": ["super+alt+z"],
+        "command": "sublime_merge_open_repo"
+    },
+    { // Open markdown link
+        "keys": ["f12"], "command": "open_linked_file", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "meta.link.inline.description.markdown", "match_all": true }
+        ] 
+    },
+    { "keys": ["tab"], "command": "mde_make_page_reference", "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown & meta.link.reference.description.markdown", "match_all": true },
+            // { "key": "setting.mde.keymap_disable.make_page_reference", "operator": "not_equal", "operand": true }
+        ]
+    }
+]  

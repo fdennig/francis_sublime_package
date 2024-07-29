@@ -1,0 +1,9 @@
+[
+    {
+      "caption": "Select wiki reference",
+      // "command": "prompt_add_string_to_selection",
+      "command": "mde_make_page_reference",
+      
+      "args"   : {}
+    },
+]
